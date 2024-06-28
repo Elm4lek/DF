@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir -r server/requirements.txt
 
 WORKDIR /home/server
 
-RUN chmod +x start_server
+RUN chmod +x start_server.sh
 
 # Specifica il comando da eseguire quando il container viene avviato
 CMD ["./start_server.sh"]
