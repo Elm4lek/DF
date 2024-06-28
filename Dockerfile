@@ -7,9 +7,9 @@ WORKDIR /home
 COPY DestructiveFarm .
 
 # Installa le dipendenze specificate nel file requirements.txt
-RUN pip install --no-cache-dir -r DestructiveFarm/server/requirements.txt
+RUN pip install --no-cache-dir -r server/requirements.txt
 
-WORKDIR /home/DestructiveFarm/server
+WORKDIR /home/server
 
 RUN chmod +x start_server
 
